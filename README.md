@@ -37,6 +37,23 @@ SPI (Serial Peripheral Interface) is a high-speed synchronous serial communicati
  * Connecting EEPROM and Flash memory chips.
  * Communication with high-speed ADC and DAC converters.
  * Driving TFT, OLED and graphic LCD displays.
+## simplex
+Simplex communication is a type of data transmission in which information flows in only one direction, meaning one device is always the transmitter and the other is always the receiver, with no possibility of sending data back; common examples include a keyboard sending data to a computer, a TV broadcast station transmitting signals to televisions, and sensor-only output devices sending data to a microcontroller.
+example:
+* Keyboard
+* TV broadcast station
+## half duplex
+Half-duplex communication is a mode of data transmission in which both devices can send and receive data, but not at the same time; communication happens in one direction at a time, so when one device is transmitting the other must wait, and examples include walkie-talkies, where only one person can speak at a time, and protocols like I²C, where the master and slave share the same data line alternately.
+example:
+ * Walkie-talkies
+ * I²C communication between microcontroller and sensors
+## Full-duplex communication is a mode of data transmission in which both devices can send and receive data at the same time, allowing continuous two-way communication, and common examples include UART communication between a PC and microcontroller, SPI protocol where MOSI and MISO work simultaneously, and telephone conversations where both people can speak and listen at the same time.
+example:
+ * Telephone calls
+ * UART with separate TX and RX lines
+ * SPI communication
+ * Ethernet networking
+
 
  
 
