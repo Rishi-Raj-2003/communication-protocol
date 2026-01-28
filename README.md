@@ -14,7 +14,8 @@ UART (Universal Asynchronous Receiver Transmitter) is a serial communication pro
 * Sending sensor data to serial displays or terminals.
 ## 12C
 
-I²C (Inter-Integrated Circuit)  is a two-wire serial communication protocol that uses SDA (data) and SCL (clock) lines to connect multiple devices on the same bus, where each slave has a unique address and communication is controlled by a master device; it supports half-duplex data transfer, allows many peripherals like RTCs, EEPROMs, LCD modules and sensors to share just two pins of the PIC16F877A, uses pull-up resistors on both lines, and is ideal for short-distance, low-speed communication inside embedded systems.
+I²C (Inter-Integrated Circuit)  is multi master and multi slave  communication protocol that uses SDA (data) and SCL (clock) lines to connect multiple devices on the same bus, where each slave has a unique address and communication is controlled by a master device; it supports half-duplex data transfer, allows many peripherals like RTCs, EEPROMs, LCD modules and sensors to share just two pins of the PIC16F877A, uses pull-up resistors on both lines, and is ideal for short-distance, low-speed communication inside embedded systems.
+Address based communication.
 ### features
  * Uses only two wires: SDA (data) and SCL (clock).
  * Supports multiple slave devices on the same bus using unique addresses.
